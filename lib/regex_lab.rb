@@ -27,7 +27,8 @@ def words_five_letters_long(text)
    # 10. #Get items from array where first name has five letters:
  # names.grep(/^\w{5}\s/)
  
- text.scan()
+ text.scan(/\w{5}\s/)
+ 
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
