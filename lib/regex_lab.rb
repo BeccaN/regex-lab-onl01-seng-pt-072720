@@ -15,19 +15,16 @@ end
 
 
 def words_five_letters_long(text)
-  new_array = []
-  x = text.split
-  x.each do |word|
-    if word.length == 5
-      new_array << word 
-    end 
-  end
-  new_array
-  #text.split.grep(/^\w{5}\s/)
-   # 10. #Get items from array where first name has five letters:
- # names.grep(/^\w{5}\s/)
+  # new_array = []
+  # x = text.split
+  # x.each do |word|
+  #   if word.length == 5
+  #     new_array << word 
+  #   end 
+  # end
+  # new_array
  
- text.scan(/\w{5}\s/)
+ text.scan(\b\w{5}\b)
  
 end
 
